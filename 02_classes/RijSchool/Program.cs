@@ -39,6 +39,13 @@ internal class Program
           rijLeraar = rijLeraar,
           tijd = 1130  
         };
+        
+        LesUur lesUur2 = new LesUur()
+        {
+          auto2 = auto2,
+          rijLeraar = rijLeraar,
+          tijd = 1302  
+        };
 
         Student student = new Student()
         {
@@ -46,13 +53,23 @@ internal class Program
           theorieTest = theorieTest,
           rijTest = rijTest,
           rijLeraar = rijLeraar,
-          lesUur = lesUur  
+          lesUur = lesUur,
+          auto1 = auto1  
+        };
+        
+        Student student2 = new Student()
+        {
+          lesPakket = lesPakket,
+          theorieTest = theorieTest,
+          rijTest = rijTest,
+          rijLeraar = rijLeraar,
+          lesUur = lesUur2, 
+          auto2 = auto2
         };
 
         Dag dag = new Dag()
         {
-          student = 
-          lesUur = lesuren,  
+          lesUur = {lesUur},
         };
     }
 }
