@@ -6,12 +6,12 @@ internal class Program
     {
         Program program = new Program();
         program.Run();
-    }
 
-    internal void Vraag1()
+    }
+   internal void Vraag1()
     {
         Console.WriteLine("How long do you think you'd survive in a zombie apocalypse?");
-        string antwoord = Console.Readline();
+        string antwoord = Console.ReadLine();
 
         Console.WriteLine(antwoord);
     }
@@ -20,6 +20,6 @@ internal class Program
     {
         Console.WriteLine("I can Survive atleast 2 hours");
         Console.WriteLine(Vraag1);
-    }
+    } 
 
 }
