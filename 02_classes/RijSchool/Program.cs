@@ -4,7 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Program program = new Program();
+        program.Run();
     }
 
     internal void Run()
@@ -17,7 +18,7 @@ class Program
           merk = "volkswagen"  
         };
 
-        auto1 auto2 = new Auto()
+        Auto auto2 = new Auto()
         {
           automaat = false,
           kenteken = "KU786G",
