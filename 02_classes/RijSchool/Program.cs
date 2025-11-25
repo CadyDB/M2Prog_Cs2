@@ -1,6 +1,6 @@
 ﻿namespace RijSchool;
 
-class Program
+internal class Program
 {
     static void Main(string[] args)
     {
@@ -52,7 +52,7 @@ class Program
         Dag dag = new Dag()
         {
           student = 
-          lesUur = lesuren  
+          lesUur = lesuren,  
         };
     }
 }
