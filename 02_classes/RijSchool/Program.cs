@@ -6,4 +6,52 @@ class Program
     {
         Console.WriteLine("Hello, World!");
     }
+
+    internal void Run()
+    {
+        Auto auto1 = new Auto()
+        {
+          automaat = true,
+          kenteken = "AA824H",
+          kilometerStand = 20567,
+          merk = "volkswagen"  
+        };
+
+        auto1 auto2 = new Auto()
+        {
+          automaat = false,
+          kenteken = "KU786G",
+          kilometerStan = 65739,
+          merk = "volvo"  
+        };
+
+        RijLeraar rijLeraar = new RijLeraar()
+        {
+          leeftijd = 30,
+          naam = "John",
+          zzp = false
+        };
+
+        LesUur lesUur = new LesUur()
+        {
+          auto1 = auto1,
+          rijLeraar = rijLeraar,
+          tijd = 1130  
+        };
+
+        Student student = new Student()
+        {
+          lesPakket = lesPakket,
+          theorieTest = theorieTest,
+          rijTest = rijTest,
+          rijLeraar = rijLeraar,
+          lesUur = lesUur  
+        };
+
+        Dag dag = new Dag()
+        {
+          student = 
+          lesUur = lesuren  
+        };
+    }
 }
