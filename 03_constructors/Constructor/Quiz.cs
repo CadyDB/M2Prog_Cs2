@@ -7,21 +7,18 @@ class Quiz
 
     void VoegVraagToeOpIndex(int index, QuizVraag vraag)
     {
-        QuizVraag quizVraag = new QuizVraag[];
-        vragen[index] = vraag;
-        vragen[index] = vraag;
-        vragen[index] = vraag;
-        vragen[index] = vraag;
         vragen[index] = vraag;
     }
 
     void VoegVraagToeOpIndex(int index, string vraag, string antwoord)
     {
-        QuizVraag quizVraag = new QuizVraag[];
-        vragen[index] = vraag;
-        vragen[index] = vraag;
-        vragen[index] = vraag;
-        vragen[index] = vraag;
-        vragen[index] = vraag;
+        
     }
+    void StelVraag(int index)
+    {
+        QuizVraag vraag = vragen[index];
+        QuizVraagAntwoord = quizVraagAntwoord = new QuizVraagAntwoord(vraag);
+        
+    }
+
 }

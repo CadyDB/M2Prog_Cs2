@@ -21,7 +21,7 @@ class Program
         goed = false;
     }
 
-    private void Run()
+    internal void Run()
     {
         QuizVraag quizVraag = new QuizVraag(vraag, antwoord);
         Quiz quiz = new Quiz(10);
