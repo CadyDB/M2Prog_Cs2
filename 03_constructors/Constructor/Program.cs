@@ -23,8 +23,9 @@ class Program
 
     private void Run()
     {
-        QuizVraag quizVraag = new QuizVraag("hier komt de vraag", "hier komt het antwoord");
+        QuizVraag quizVraag = new QuizVraag(vraag, antwoord);
         Quiz quiz = new Quiz(10);
+        quiz.VoegVraagToeOpIndex(0, quizVraag);
     }
 
 }
