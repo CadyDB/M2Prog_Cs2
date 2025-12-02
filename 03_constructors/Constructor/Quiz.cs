@@ -17,8 +17,10 @@ class Quiz
     void StelVraag(int index)
     {
         QuizVraag vraag = vragen[index];
-        QuizVraagAntwoord = quizVraagAntwoord = new QuizVraagAntwoord(vraag);
+        QuizVraagAntwoord quizVraagAntwoord = new QuizVraagAntwoord(vraag);
         
+        Console.WriteLine(vraag.vraag);
+        string antwoord = Console.ReadLine();
     }
 
 }
