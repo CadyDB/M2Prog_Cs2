@@ -35,6 +35,10 @@ class Program
             Console.WriteLine(prijzen[i]);
             Console.WriteLine(artiekelen[i]);
         }
+
+        foreach (Formulier formulier in formulieren){
+            Console.WriteLine(formulieren);
+        }
     }
 
     
