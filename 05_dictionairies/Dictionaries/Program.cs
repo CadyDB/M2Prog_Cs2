@@ -2,6 +2,9 @@
 
 class Program
 {
+    Dictionary<int, string> rooms = new Dictionary<int, string>( 
+            rooms.Add(start.GetRoomLocationKey(), start)
+        );
     static void Main(string[] args)
     {
         Program program = new Program[];
@@ -32,6 +35,14 @@ class Program
         {
             
         }
+
+        Room start = new Room(0, 0[
+            "xxxxx",
+            "x...x",
+            "x...x",
+            "x...x",
+            "xxxxx"
+        ]);
     }
 }
 
