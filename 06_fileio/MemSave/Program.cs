@@ -24,7 +24,7 @@ class Program
     {
 
         bool bestaatDeFile = File.Exists(saveFile);
-        if(bestaatDeFile -- true)
+        if(bestaatDeFile--true)
         {
             Console.WriteLine("file exists");
             welkomsTekst = File.ReadAllText(saveFile);
@@ -34,7 +34,8 @@ class Program
         while (true)
         {
             Console.WriteLine("enter a text, then press enter");
-            welkomsText= Console.ReadLine();        
+            welkomsText= Console.ReadLine(); 
+            File.WriteAllText(saveFile, welkomsTekst);      
         }
     }
 }
