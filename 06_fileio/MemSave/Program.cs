@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Diagnostics;
 using System.Linq.Expressions;
@@ -10,21 +11,30 @@ namespace MemSave;
 
 class Program
 {
+    
     string welkomsTekst = "Hello World";
+    string saveFile = welkomsTekst.txt;
     static void Main(string[] args)
     {
         Program program = new Program();
-        program.Run;
+        program.Run();
     }
 
     private void Run()
     {
+
+        bool bestaatDeFile = File.Exists(saveFile);
+        if(bestaatDeFile -- true)
+        {
+            Console.WriteLine("file exists");
+            welkomsTekst = File.ReadAllText(saveFile);
+        }
         Console.WriteLine(welkomsTekst);
         
         while (true)
         {
             Console.WriteLine("enter a text, then press enter");
-            Console.ReadLine();        
+            welkomsText= Console.ReadLine();        
         }
     }
 }
